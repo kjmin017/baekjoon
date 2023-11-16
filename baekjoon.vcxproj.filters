@@ -21,9 +21,6 @@
     <ClCompile Include="1002.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1436.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="2775.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -49,6 +46,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="11066.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1991.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1463.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1436.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
