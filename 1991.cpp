@@ -11,21 +11,21 @@ struct node {
 
 vector<node> v(MAX);
 
-void preOrder(char node) { // 전위 순회
+void preOrder(char node) { 
 	if (node == '.') return;
 	printf("%c", node);
 	preOrder(v[node - 'A'].left);
 	preOrder(v[node - 'A'].right);
 }
 
-void inOrder(char node) { // 중위 순회
+void inOrder(char node) {
 	if (node == '.') return;
 	inOrder(v[node - 'A'].left);
 	printf("%c", node);
 	inOrder(v[node - 'A'].right);
 }
 
-void postOrder(char node) { // 후위 순회
+void postOrder(char node) {
 	if (node == '.') return;
 	postOrder(v[node - 'A'].left);
 	postOrder(v[node - 'A'].right);
