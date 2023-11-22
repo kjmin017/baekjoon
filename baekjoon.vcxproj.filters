@@ -57,13 +57,16 @@
     <ClCompile Include="1436.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="19532cpp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="1010.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="15591.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="19532.py">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="23971.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
