@@ -21,7 +21,7 @@ int main() {
 	}
 	int h = H / (N + 1) + a;
 	
-	int w = W / (M + 1);
+	int w = W / (M + 1) + b;
 	int d = h * w;
 	cout << d;
 	return 0;
