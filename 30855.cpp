@@ -79,7 +79,7 @@ Fraction parseAndCompute(vector<string>& tokens, int& pos) {
 			c = { stoi(tokens[pos])*stoi(tokens[pos]),stoi(tokens[pos]) };
 			if (pos < tokens.size())pos++;
 		}
-		if (tokens[pos] != "(" && tokens[pos] != ")" || tokens[pos] == "(") {
+		if (tokens[pos] != "(" && tokens[pos] != ")") {
 			return{ 0,1 };
 		}
 		return addFrac(a, divFrac(b, c));
