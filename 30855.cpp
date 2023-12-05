@@ -79,8 +79,8 @@ Fraction parseAndCompute(vector<string>& tokens, int& pos) {
 			c = { stoi(tokens[pos])*stoi(tokens[pos]),stoi(tokens[pos]) };
 			if (pos < tokens.size())pos++;
 		}
-		if (tokens[pos] != "(" && tokens[pos] != ")") {
-			return{ 0,1 };
+		if (tokens[pos] != ")") {
+			return{ 0,0 };
 		}
 		return addFrac(a, divFrac(b, c));
 	}
@@ -112,7 +112,7 @@ int main() {
 	}
 	int pos = 0;
 	Fraction result = parseAndCompute(tokens, pos);
-	if (result.numerator == 0 && result.denominator == 1) {
+	if (result.numerator == 0 || result.denominator == 0) {
 		cout << -1 << "\n";
 		return 0;
 	}
