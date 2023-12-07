@@ -54,6 +54,9 @@ Fraction parseAndCompute(vector<string>& tokens, int& pos) {
 		if (pos < tokens.size() && tokens[pos] == "(") {
 			if (pos < tokens.size())pos++;
 			a = parseAndCompute(tokens, pos);
+			if (tokens[pos] != ")") {
+				return{ 0,0 };
+			}
 			if (pos < tokens.size())pos++;
 		}
 		else if (pos < tokens.size()) {
@@ -64,6 +67,9 @@ Fraction parseAndCompute(vector<string>& tokens, int& pos) {
 		if (pos < tokens.size() && tokens[pos] == "(") {
 			if (pos < tokens.size())pos++;
 			b = parseAndCompute(tokens, pos);
+			if (tokens[pos] != ")") {
+				return{ 0,0 };
+			}
 			if (pos < tokens.size())pos++;
 		}
 		else if (pos < tokens.size()) {
@@ -73,6 +79,9 @@ Fraction parseAndCompute(vector<string>& tokens, int& pos) {
 		if (pos < tokens.size() && tokens[pos] == "(") {
 			if (pos < tokens.size())pos++;
 			c = parseAndCompute(tokens, pos);
+			if (tokens[pos] != ")") {
+				return{ 0,0 };
+			}
 			if (pos < tokens.size())pos++;
 		}
 		else if (pos < tokens.size()) {
